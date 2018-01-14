@@ -1,19 +1,5 @@
-FROM alpine:3.3
+FROM gcr.io/google-samples/k8sdocs:1.1
 
-RUN apk add --no-cache \
-	build-base \
-	ca-certificates \
-	libffi-dev \
-	nodejs \
-	ruby-dev \
-	ruby-nokogiri \
-	zlib-dev
-
-RUN	gem install \
-	bundler \
-	github-pages \
-	io-console \
-	--no-rdoc --no-ri
 
 VOLUME /k8sdocs
 
@@ -24,3 +10,4 @@ WORKDIR /k8sdocs
 
 CMD [ "/start.sh" ]
 # For instructions, see http://kubernetes.io/editdocs/
+#  docker run -d -v E:/lynzabo.github.io/kubernetes:/k8sdocs -p 4000:4000 lynzabo/k8sdocs:1.1

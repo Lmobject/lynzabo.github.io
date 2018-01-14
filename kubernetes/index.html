@@ -7,10 +7,10 @@ cid: home
 <section id="hero" class="light-text">
     <main>
         <div id="headlineWrapper">
-            <h1>Production-Grade Container Orchestration</h1>
-            <h5>Automated container deployment, scaling, and management</h5>
+            <h1>生产级别的容器编排管理</h1>
+            <h5>容器集群的自动化部署，扩容，以及运维</h5>
         </div>
-        <a href="/docs/tutorials/kubernetes-basics/" id="quickstartButton" class="button">Try Our Interactive Tutorials</a>
+        <a href="/docs/tutorials/kubernetes-basics/" id="quickstartButton" class="button">试用 Hello World</a>
     </main>
     <!--<div id="vendorStrip" class="light-text">-->
         <!--<img src="images/logos/viacom_logo.png">-->
@@ -28,38 +28,36 @@ cid: home
     <main>
         <div class="image-wrapper"><img src="images/flower.png"></div>
         <div class="content">
-            <h3><a href="/docs/concepts/overview/what-is-kubernetes/">Kubernetes</a> is an open-source system for automating deployment, scaling, and management of containerized applications.</h3>
-            <p>It groups containers that make up an application into logical units for easy management and discovery. Kubernetes builds
-            upon <a href="http://queue.acm.org/detail.cfm?id=2898444">15 years of experience of running production workloads at Google</a>,
-            combined with best-of-breed ideas and practices from the community.</p>
+            <h3><a href="/docs/concepts/overview/what-is-kubernetes/">Kubernetes</a> 是一个开源的，可以自动部署、弹性伸缩和管理容器应用的系统。</h3>
+            <p>它可以方便的让一组容器作为一个单元，来管理以及查找，Kubernetes 基于<a href="http://queue.acm.org/detail.cfm?id=2898444">Google 生产环境的15年运维经验</a>， 结合了社区中各项最佳设计和实践而构建的。</p>
         </div>
     </main>
     <main>
         <div class="image-wrapper"><img src="images/scalable.png"></div>
         <div class="content">
-            <h4>Planet Scale</h4>
-            <p>Designed on the same principles that allows Google to run billions of containers a week, Kubernetes can scale without increasing your ops team.</p>
+            <h4>超强大的弹性伸缩功能</h4>
+            <p>在Google每周有数十亿的容器进行自动弹性伸缩。用Kubernetes的弹性伸缩可以大大减少运维人员的工作。</p>
         </div>
     </main>
     <main>
         <div class="image-wrapper"><img src="images/blocks.png"></div>
         <div class="content">
             <h4>Never Outgrow</h4>
-            <p>Whether testing locally or running a global enterprise, Kubernetes flexibility grows with you to deliver your applications consistently and easily no matter how complex your need is.</p>
+            <p>无论你是在本地的测试环境，还是全球性各个企业环境，无论你的需求是多么复杂，Kubernetes 可以保证应用程序一致性的前提，让你灵活的增加你的应用。</p>
         </div>
     </main>
     <main>
         <div class="image-wrapper"><img src="images/suitcase.png"></div>
         <div class="content">
             <h4>Run Anywhere</h4>
-            <p>Kubernetes is open source giving you the freedom to take advantage of on-premises, hybrid, or public cloud infrastructure, letting you effortlessly move workloads to where it matters to you.</p>
+            <p>Kubernetes 是一个给你足够方便，让你能随意部署应用到私有云，公有云，或者混合环境，让你能轻松分配负载均衡的开源系统。</p>
         </div>
     </main>
 </section>
 
 <section id="video">
     <div class="light-text">
-        <h2>Kubernetes: Finally&hellip; A True Cloud Platform</h2>
+        <h2>Kubernetes: Finally&hellip; 一个真正的云平台</h2>
         <p>Sam Ghods, Co-Founder and Services Architect at Box, gives a passionate talk last year at KubeCon Seattle showing that with Kubernetes, we have for first time a universal interface that one can build real deployment tooling against.</p>
         <button id="desktopShowVideoButton" onclick="kub.showVideo()">Watch Video</button>
         <br>
@@ -71,57 +69,50 @@ cid: home
 
 <section id="features">
     <main>
-        <h3 class="center">Kubernetes Features</h3>
+        <h3 class="center">Kubernetes 特性（待译）</h3>
 
         <div class="feature-box">
             <div>
-                <h4><a href="/docs/concepts/configuration/manage-compute-resources-container/">Automatic binpacking</a></h4>
-                <p>Automatically places containers based on their resource requirements and other constraints, while not
-                    sacrificing availability. Mix critical and best-effort workloads in order to drive up utilization and save even more resources.</p>
+                <h4><a href="/docs/concepts/configuration/manage-compute-resources-container/">自动装箱(Automatic binpacking)</a></h4>
+                <p>根据资源需求和其他因素调度创建容器，自身只消耗很少的资源，但会尽最大可能的控制所有物理资源的使用。</p>
             </div>
             <div>
-                <h4><a href="/docs/concepts/workloads/controllers/replicationcontroller/#what-is-a-replicationcontroller">Self-healing</a></h4>
-                <p>Restarts containers that fail, replaces and reschedules containers when nodes die, kills containers
-                    that don't respond to your user-defined health check, and doesn't advertise them to clients until they are ready to serve.</p>
+                <h4><a href="/docs/concepts/workloads/controllers/replicationcontroller/#what-is-a-replicationcontroller">健康检查(Self-healing)</a></h4>
+                <p>假若有物理机挂掉，Kubernetes会自动在新物理节点上重启所有的这个节点容器，保证容器的副本数。Kubernetes会杀死不响应用户定义的健康检查的容器，对外只提供准备就绪的服务。</p>
             </div>
         </div>
 
         <div class="feature-box">
             <div>
-                <h4><a href="/docs/tasks/run-application/horizontal-pod-autoscale/">Horizontal scaling</a></h4>
-                <p>Scale your application up and down with a simple command, with a UI, or automatically based on CPU usage.</p>
+                <h4><a href="/docs/tasks/run-application/horizontal-pod-autoscale/">水平扩容(Horizontal scaling)</a></h4>
+                <p>通过UI、命令，或者自动扩容，你可以随意扩缩容应用。</p>
             </div>
             <div>
-                <h4><a href="/docs/concepts/services-networking/service/">Service discovery and load balancing</a></h4>
-                <p>No need to modify your application to use an unfamiliar service discovery mechanism. Kubernetes gives
-                    containers their own IP addresses and a single DNS name for a set of containers, and can load-balance across them.</p>
-            </div>
-        </div>
-
-        <div class="feature-box">
-            <div>
-                <h4><a href="/docs/concepts/workloads/controllers/deployment/#what-is-a-deployment">Automated rollouts and rollbacks</a></h4>
-                <p>Kubernetes progressively rolls out changes to your application or its configuration, while monitoring
-                    application health to ensure it doesn't kill all your instances at the same time. If something goes
-                    wrong, Kubernetes will rollback the change for you. Take advantage of a growing ecosystem of deployment solutions.</p>
-            </div>
-            <div>
-                <h4><a href="/docs/concepts/configuration/secret/">Secret</a> and <a href="/docs/tasks/configure-pod-container/configure-pod-configmap/">configuration</a> management</h4>
-                <p>Deploy and update secrets and application configuration without rebuilding your image and without
-                    exposing secrets in your stack configuration.</p>
+                <h4><a href="/docs/concepts/services-networking/service/">服务发现与负载均衡(Service discovery and load balancing)</a></h4>
+                <p>你不再需要给应用添加服务发现功能，Kubernetes已经提供了服务发现、负载均衡功能，你只需要在你的服务中使用Kubernetes提供的IP地址或者DSN地址，Kubernetes自动会为所有的容器提供服务发现、负载均衡功能。</p>
             </div>
         </div>
 
         <div class="feature-box">
             <div>
-                <h4><a href="/docs/concepts/storage/persistent-volumes/">Storage orchestration</a></h4>
-                <p>Automatically mount the storage system of your choice, whether from local storage, a public cloud provider
-                such as <a href="https://cloud.google.com/storage/">GCP</a> or <a href="https://aws.amazon.com/products/storage/">AWS</a>, or a network storage system such as NFS, iSCSI,
-                Gluster, Ceph, Cinder, or Flocker.</p>
+                <h4><a href="/docs/concepts/workloads/controllers/deployment/#what-is-a-deployment">自动滚动升级和回滚(Automated rollouts and rollbacks)</a></h4>
+                <p>Kubernetes提供了自动滚动升级和回滚功能，并且在滚动升级时保证，同一时刻不会停掉所有实例。如果滚动升级失败，Kubernetes会自动回滚修改。这些通过Deployment对象完成。</p>
             </div>
             <div>
-                <h4><a href="/docs/concepts/workloads/controllers/jobs-run-to-completion/">Batch execution</a></h4>
-                <p>In addition to services, Kubernetes can manage your batch and CI workloads, replacing containers that fail, if desired.</p>
+                <h4><a href="/docs/concepts/configuration/secret/">Secret</a> and <a href="/docs/tasks/configure-pod-container/configure-pod-configmap/">configuration</a> 管理</h4>
+                <p>部署、更新secrets和configuration，不需要再重新构建镜像。不会暴露你的secrets。</p>
+            </div>
+        </div>
+
+        <div class="feature-box">
+            <div>
+                <h4><a href="/docs/concepts/storage/persistent-volumes/">存储架构(Storage orchestration)</a></h4>
+                <p>目前支持可以挂载在本地磁盘，云服务提供商如<a href="https://cloud.google.com/storage/">GCP</a> 或者 <a href="https://aws.amazon.com/products/storage/">AWS</a>, 网络存储如 NFS, iSCSI,
+                Gluster, Ceph, Cinder, or Flocker。</p>
+            </div>
+            <div>
+                <h4><a href="/docs/concepts/workloads/controllers/jobs-run-to-completion/">批处理执行(Batch execution)</a></h4>
+                <p>除了services，Kubernetes可以执行批处理任务、定时批处理任务。</p>
             </div>
         </div>
 
@@ -133,19 +124,19 @@ cid: home
         <h3>Case Studies</h3>
         <div id="caseStudiesWrapper">
             <div>
-                <p>Using Kubernetes to reinvent the world's largest educational company</p>
+                <p>世界上最大的教育行业公司，使用Kubernetes作为编排工具</p>
                 <a href="/case-studies/pearson/">Read more</a>
             </div>
             <div>
-                <p>Kubernetes at Box: Microservices at Maximum Velocity</p>
+                <p>Kubernetes at Box: 基于Kubernetes构建大量的微服务。</p>
                 <a href="https://blog.box.com/blog/kubernetes-box-microservices-maximum-velocity/">Read more</a>
             </div>
             <div>
-                <p>Inside eBay's shift to Kubernetes and containers atop OpenStack</p>
+                <p>由虚机部署模式的OpenStack像部署容器的Kubernetes上转变。</p>
                 <a href="https://www.nextplatform.com/2015/11/12/inside-ebays-shift-to-kubernetes-and-containers-atop-openstack/">Read more</a>
             </div>
             <div>
-                <p>Migrating from a homegrown 'cluster' to Kubernetes</p>
+                <p>迁移应用到Kubernetes上</p>
                 <a href="https://www.youtube.com/watch?v=6XGUTu3WhBw">Watch the video</a>
             </div>
         </div>
@@ -172,7 +163,7 @@ cid: home
                 <!--<a href="https://www.youtube.com/watch?v=6XGUTu3WhBw">Watch the video</a>-->
             <!--</div>-->
         <!--</div>-->
-        <h5 style="text-align: center"><a href="/case-studies/" style="color: #3371E3; font-weight: 400">View all case studies</a></h5>
+        <h5 style="text-align: center"><a href="/case-studies/" style="color: #3371E3; font-weight: 400">浏览更多使用案例</a></h5>
     </main>
 </section>
 
