@@ -8,6 +8,7 @@ title: 故障排除
 在使用Kubernetes遇到错误时候，可以查找这个文档快速解决问题。我们从两部分介绍怎么排除故障:
 
    * [排除应用故障](/docs/tasks/debug-application-cluster/debug-application/) - 排除Kubernetes上部署的应用故障。
+ 
    * [排除集群故障](/docs/tasks/debug-application-cluster/debug-cluster/) - 方便集群管理员排查集群问题。
 
 你也可以从[release](https://github.com/kubernetes/kubernetes/releases)获取你想要的答案。

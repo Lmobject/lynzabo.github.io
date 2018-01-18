@@ -1,6 +1,6 @@
 ---
 layout: docwithnav
-title: Contributing to the Kubernetes Documentation
+title: 贡献Kubernetes文档
 ---
 
 <!-- BEGIN: Gotta keep this section JS/HTML because it swaps out content dynamically -->
@@ -40,21 +40,21 @@ $( document ).ready(function() {
 </div>
 <div id="generalInstructions">
 
-<h2>Edit our site in the cloud</h2>
+<h2>编辑网站</h2>
 
-<p>Click the button below to visit the repo for our site. You can then click the <b>Fork</b> button in the upper-right area of the screen to create a copy of our site in your GitHub account called a <i>fork</i>. Make any changes you want in your fork, and when you are ready to send those changes to us, go to the index page for your fork and click <b>New Pull Request</b> to let us know about it.</p>
+<p>点击下方的按钮到我们网站的repo。你可以点击<b>Fork</b>按钮去拷贝一份代码到你的Github账户上。在你的仓库上做修改，修改完后，你可以提交一个<b>New Pull Request</b>给我们，发送你的修改请求。</p>
 
-<p><a class="button" href="https://github.com/kubernetes/website/">Browse this site's source code</a></p>
+<p><a class="button" href="https://github.com/kubernetes/website/">浏览网站源码</a></p>
 
 </div>
 <!-- END: Dynamic section -->
 
 <br/>
 
-For more information about contributing to the Kubernetes documentation, see:
+想了解更多如何贡献Kubernetes文档，可以看：
 
-* [Creating a Documentation Pull Request](/docs/home/contribute/create-pull-request/)
-* [Writing a New Topic](/docs/home/contribute/write-new-topic/)
-* [Staging Your Documentation Changes](/docs/home/contribute/stage-documentation-changes/)
-* [Using Page Templates](/docs/home/contribute/page-templates/)
-* [Documentation Style Guide](/docs/home/contribute/style-guide/)
+* [创建一个文档Pull Request](/docs/home/contribute/create-pull-request/)
+* [写一个新的主题](/docs/home/contribute/write-new-topic/)
+* [如何在本地运行Kubernetes文档](/docs/home/contribute/stage-documentation-changes/)
+* [使用Page Templates](/docs/home/contribute/page-templates/)
+* [编写文档风格指导](/docs/home/contribute/style-guide/)
