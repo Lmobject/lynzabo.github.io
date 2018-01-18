@@ -4,9 +4,9 @@ toc:
 - docs/home/index.md
 - docs/home/supported-doc-versions.md
 
-- title: Release Notes
+- title: 各个版本Release信息
   path: https://git.k8s.io/kubernetes/CHANGELOG.md
-- title: Release Roadmap
+- title: 发布路线图(里程碑)
   path: https://github.com/kubernetes/kubernetes/milestones/
 
 - docs/tasks/debug-application-cluster/troubleshooting.md

@@ -2,7 +2,7 @@
 approvers:
 - brendandburns
 - davidopp
-title: Troubleshooting
+title: 故障排除
 ---
 
 Sometimes things go wrong. This guide is aimed at making them right. It has
