@@ -5,19 +5,16 @@ approvers:
 title: 故障排除
 ---
 
-Sometimes things go wrong. This guide is aimed at making them right. It has
-two sections:
+在使用Kubernetes遇到错误时候，可以查找这个文档快速解决问题。我们从两部分介绍怎么排除故障:
 
-   * [Troubleshooting your application](/docs/tasks/debug-application-cluster/debug-application/) - Useful for users who are deploying code into Kubernetes and wondering why it is not working.
-   * [Troubleshooting your cluster](/docs/tasks/debug-application-cluster/debug-cluster/) - Useful for cluster administrators and people whose Kubernetes cluster is unhappy.
+   * [排除应用故障](/docs/tasks/debug-application-cluster/debug-application/) - 排除Kubernetes上部署的应用故障。
+   * [排除集群故障](/docs/tasks/debug-application-cluster/debug-cluster/) - 方便集群管理员排查集群问题。
 
-You should also check the known issues for the [release](https://github.com/kubernetes/kubernetes/releases)
-you're using.
+你也可以从[release](https://github.com/kubernetes/kubernetes/releases)获取你想要的答案。
 
-## Getting help
+## 获得帮助
 
-If your problem isn't answered by any of the guides above, there are variety of
-ways for you to get help from the Kubernetes team.
+如果你的问题通过上面几种方式都没有获得解决办法，你可以通过各种方式寻求Kubernetes团队获得帮助。
 
 ### Questions
 

@@ -1,22 +1,21 @@
 ---
-title: Supported Versions of the Kubernetes Documentation
+title: 支持Kubernetes版本
 ---
 
 {% capture overview %}
 
-This website contains documentation for the current version of Kubernetes
-and the four previous versions of Kubernetes.
+这个文档包含Kubernetes当前版本的文档，还有这个版本之前的四个版本。
 
 {% endcapture %}
 
 {% capture body %}
 
-## Current version
+## 当前版本
 
-The current version is
+当前版本是
 [{{page.version}}](/).
 
-## Previous versions
+## 之前版本
 
 {% for v in page.versions %}
 {% if v.version != page.version %}
