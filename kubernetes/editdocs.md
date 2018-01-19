@@ -12,9 +12,9 @@ $( document ).ready(function() {
         $("#generalInstructions").hide();
         $("#continueEdit").show();
         $("#continueEditButton").text("Edit " + forwarding);
-        $("#continueEditButton").attr("href", "https://github.com/kubernetes/website/edit/{{ page.docsbranch }}/" + forwarding)
+        $("#continueEditButton").attr("href", "https://github.com/Lynzabo/lynzabo.github.io/edit/{{ page.docsbranch }}" + "/kubernetes/" + forwarding)
         $("#viewOnGithubButton").text("View " + forwarding + " on GitHub");
-        $("#viewOnGithubButton").attr("href", "https://git.k8s.io/website/" + forwarding)
+        $("#viewOnGithubButton").attr("href", "https://github.com/Lynzabo/lynzabo.github.io/blob/{{ page.docsbranch }}/kubernetes/" + forwarding)
     } else {
         $("#generalInstructions").show();
         $("#continueEdit").hide();
@@ -23,15 +23,15 @@ $( document ).ready(function() {
 </script>
 <div id="continueEdit">
 
-<h2>Continue your edit</h2>
+<h2>继续编辑</h2>
 
-<p><b>To make changes to the document, do the following:</b></p>
+<p><b>如果要编辑这个文件,请按照下面进行操作:</b></p>
 
 <ol>
-<li>Click the button below to edit the page you were just on.</li>
-<li>Click <b>Commit Changes</b> at the bottom of the screen to create a copy of our site in your GitHub account called a <i>fork</i>.</li>
-<li>You can make other changes in your fork after it is created, if you want.</li>
-<li>On the index page, click <b>New Pull Request</b> to let us know about it.</li>
+<li>点击下面的编辑按钮进入Github上当前页面地址</li>
+<li>点击<b>Fork this repository and propose changes</b>按钮,Fork一份网站源码代码,并自动打开这个页面的编辑界面.</li>
+<li>填写修改后的文件内容,点击<b>Propose file change</b>按钮提交修改,并进入请求合并界面.</li>
+<li>然后点击<b>Create pull request</b>发送一个合并请求,等待管理员同意合并.</li>
 </ol>
 
 <p><a id="continueEditButton" class="button"></a></p>
