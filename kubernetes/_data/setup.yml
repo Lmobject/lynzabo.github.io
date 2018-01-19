@@ -1,5 +1,5 @@
-bigheader: "Setup"
-abstract: "Instructions for setting up a Kubernetes cluster."
+bigheader: "构建"
+abstract: "Kubernetes集群相关组件的构建方法介绍"
 toc:
 - docs/setup/index.md
 - docs/setup/pick-right-solution.md

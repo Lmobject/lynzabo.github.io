@@ -1,5 +1,5 @@
-bigheader: "Concepts"
-abstract: "Detailed explanations of Kubernetes system concepts and abstractions."
+bigheader: "概念"
+abstract: "详细讲解Kubernetes各个组件、服务工作原理"
 toc:
 - docs/concepts/index.md
 

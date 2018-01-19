@@ -7,33 +7,33 @@ title: Kubernetes文档
 
 Kubernetes文档可以帮助你系统的了解怎么使用Kubernetes编排你的应用程序。文档适用对象包括初学者/高级研究者。如果你还不清楚Kubernetes是什么，怎么工作，可以阅读"[What is Kubernetes](/docs/concepts/overview/what-is-kubernetes/)"。
 
-## 互动教程
+## 互动教程(Interactive Tutorial)
 
 [Kubernetes互动教程](/docs/tutorials/kubernetes-basics/)提供了一个虚拟终端，通过这个虚拟终端你可以直接在浏览器上可以远程操作Kubernetes。学习完这章后，你会明白如何在Kubernetes系统中部署应用、暴露服务、做服务弹性伸缩、回滚一个容器应用等知识。
 
-## 安装Kubernetes
+## 安装Kubernetes(Setup)
 
-[选择适合你的方法](/docs/setup/pick-right-solution/)提供了很多方式来安装运行Kubernetes集群，包括本地开发环境，第三方云提供商，你自己的私有集群。
+[选择适合你的方法(Picking the Right Solution)](/docs/setup/pick-right-solution/)提供了很多方式来安装运行Kubernetes集群，包括本地开发环境，第三方云提供商，你自己的私有集群。
 
-## 概念，任务，教程
+## 概念(Concepts)，任务(Tasks)，教程(Tutorials)
 
 我们文档提供了大量资源让你学会使用Kubernetes，精通Kubernetes。
 
-* [概念](/docs/concepts/) 深入讲解了Kubernetes各个组件、服务工作原理。
-* [任务](/docs/tasks/) 讲解了从入门到深入的使用Kubernetes提供的各个对象。
-* [教程](/docs/tutorials/) 详细讲解了Kubernetes工作流程。
+* [概念(Concepts)](/docs/concepts/) 深入讲解了Kubernetes各个组件、服务工作原理。
+* [任务(Tasks)](/docs/tasks/) 讲解了从入门到深入的使用Kubernetes提供的各个对象。
+* [教程(Tutorials)](/docs/tutorials/) 详细讲解了Kubernetes工作流程。
 
-## API和Command参考
+## API和Command参考(Reference)
 
-[参考](/docs/reference/)部分提供了完善的，如何使用Kubernetes提供的API、SDK，如何使用`kubectl`命令行工具。
+[参考(Reference)](/docs/reference/)部分提供了完善的，如何使用Kubernetes提供的API、SDK，如何使用`kubectl`命令行工具。
 
 ## 工具
 
-[工具](/docs/tools/)部分罗列了很多Kubernetes相关的工具，包括Kubernets工具链配套工具和第三方工具Kubernetes相关的工具。
+[工具(Tools)](/docs/tools/)部分罗列了很多Kubernetes相关的工具，包括Kubernets工具链配套工具和第三方工具Kubernetes相关的工具。
 
 ## 故障排除
 
-[故障排除](/docs/tasks/debug-application-cluster/troubleshooting)罗列了大量常见故障处理办法，方便查找错误。
+[故障排除(Troubleshooting)](/docs/tasks/debug-application-cluster/troubleshooting)罗列了大量常见故障处理办法，方便查找错误。
 
 ## Kubernetes版本介绍
 

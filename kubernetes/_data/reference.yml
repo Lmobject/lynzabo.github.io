@@ -1,5 +1,5 @@
-bigheader: "Reference Documentation"
-abstract: "Design docs, concept definitions, and references for APIs and CLIs."
+bigheader: "参考文档"
+abstract: "参考部分提供了完善的，如何使用Kubernetes提供的API、SDK，如何使用kubectl命令行工具。"
 toc:
 - docs/reference/index.md
 - docs/reference/glossary.md
