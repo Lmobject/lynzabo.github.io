@@ -3,31 +3,27 @@ approvers:
 - brendandburns
 - erictune
 - mikedanese
-title: Picking the Right Solution
+title: 选择适合你的安装方法
 ---
 
-Kubernetes can run on various platforms: from your laptop, to VMs on a cloud provider, to a rack of
-bare metal servers. The effort required to set up a cluster varies from running a single command to
-crafting your own customized cluster. Use this guide to choose a solution that fits your needs.
+Kubernetes集群可以运行在很多平台上:例如你的电脑，云服务上提供的虚拟机，bare metal云服务器。安装简单，你只需要运行几个命令就可以搭建一个适合你的环境的Kubernetes集群。下面会提供很多办法来安装集群，总有一种办法是符合你的场景的。 
 
-If you just want to "kick the tires" on Kubernetes, use the [local Docker-based solution using MiniKube](#local-machine-solutions).
+如果你只是做简单测试，或者本地开发，Kubernetes集群只用一个节点（Kubernetes相关所有服务都在一个机器上安装）就够你用，你可以直接看[如何使用Minikube在本地搭建一个单节点Kubernetes环境](#local-machine-solutions)。
 
-When you are ready to scale up to more machines and higher availability, a [hosted solution](#hosted-solutions) is the easiest to create and maintain.
+如果你希望集群能够弹性伸缩，高可用，即需要在多个节点上安装，你可以看[hosted solution](#hosted-solutions)。
 
-[Turnkey cloud solutions](#turnkey-cloud-solutions) require only a few commands to create
-and cover a wide range of cloud providers. [On-Premises turnkey cloud solutions](#on-premises-turnkey-cloud-solutions) have the simplicity of the turnkey cloud solution combined with the security of your own private network.
+使用[Turnkey cloud solutions](#turnkey-cloud-solutions)，你只需要简单执行几个命令，就可以在很多云提供商平台创建一个Kubernetes集群。[On-Premises turnkey cloud solutions](#on-premises-turnkey-cloud-solutions)提供了办法，怎么在你的私有网络环境快速创建一个Kubernetes集群。
 
-If you already have a way to configure hosting resources, use [kubeadm](/docs/setup/independent/create-cluster-kubeadm/) to easily bring up a cluster with a single command per machine.
+在你自己私有网络环境环境，使用[kubeadm](/docs/setup/independent/create-cluster-kubeadm/)创建集群也很快，你只需要在每个节点上执行一条命令，一个Kubernetes集群就已经搭建完成了。
 
-[Custom solutions](#custom-solutions) vary from step-by-step instructions to general advice for setting up
-a Kubernetes cluster from scratch.
+[定制Kubernetes集群](#custom-solutions)提供了很详细的指导流程，你只需要按照步骤一步步操作，就可以定制一个自己配置的Kubernetes集群。 
 
 * TOC
 {:toc}
 
 # Local-machine Solutions
 
-* [Minikube](/docs/getting-started-guides/minikube/) is the recommended method for creating a local, single-node Kubernetes cluster for development and testing. Setup is completely automated and doesn't require a cloud provider account.
+* [Minikube](/docs/getting-started-guides/minikube/)是下面办法中最推荐的，要在本地环境搭建一个节点的Kubernetes集群来做开发测试使用的安装办法。安装是全自动话的，不需要做任何配置设置。
 
 * [Kubeadm-dind](https://github.com/Mirantis/kubeadm-dind-cluster) is a multi-node (while minikube is single-node) Kubernetes cluster which only requires a docker daemon. It uses docker-in-docker technique to spawn the Kubernetes cluster.
 
